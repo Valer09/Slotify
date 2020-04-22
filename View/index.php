@@ -6,11 +6,12 @@ include("../Includes/config.php");
 
 if (isset($_SESSION['userLoggedIn'])) {
     $userLoggedIn = $_SESSION['userLoggedIn'];
+    echo '<script> console.log("Session open"); </script>';
 
-    echo '<script> console.log("DIO SIA LODATO"); </script>';
 } else {
-    echo '<script> console.log("VAFFANCULO"); </script>';
-    //header("Location: register.php");
+    ss
+    echo '<script> console.log("Session closed"); </script>';
+    header("Location: register.php");
 }
 
 ?>
