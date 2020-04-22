@@ -9,7 +9,7 @@ if (isset($_SESSION['userLoggedIn'])) {
     echo '<script> console.log("Session open"); </script>';
 
 } else {
-    ss
+
     echo '<script> console.log("Session closed"); </script>';
     header("Location: register.php");
 }
