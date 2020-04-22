@@ -50,7 +50,7 @@ if (isset($_POST['registerButton'])) {
                 <p>
                     <?php echo $account->getError(Constants::$loginFailed); ?>
                     <label for="loginUsername"> Username</label>
-                    <input id="loginUsername" name="loginUsername" type="textbox" placeholder="e.g bart"
+                    <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g bart"
                            value="<?php getInputValue('loginUsername') ?>" required>
                 </p>
                 <p>

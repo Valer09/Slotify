@@ -1,13 +1,16 @@
 <?php
-include("includes/config.php");
+include("../Includes/config.php");
 
 //session_destroy(); LOGOUT
 
+
 if (isset($_SESSION['userLoggedIn'])) {
     $userLoggedIn = $_SESSION['userLoggedIn'];
+
+    echo '<script> console.log("DIO SIA LODATO"); </script>';
 } else {
-    echo
-    header("Location: register.php");
+    echo '<script> console.log("VAFFANCULO"); </script>';
+    //header("Location: register.php");
 }
 
 ?>
