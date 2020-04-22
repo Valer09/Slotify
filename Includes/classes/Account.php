@@ -53,6 +53,7 @@ class Account
     }
 
 
+
     private function insertUserDetails($un, $fn, $ln, $em, $pw)
     {
 
