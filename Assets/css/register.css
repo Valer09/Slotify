@@ -64,7 +64,7 @@ html, body {
     text-align: center;
 }
 
-#inputContainer input[type="text"],
+#inputContainer input[type="textbox"],
 #inputContainer input[type="email"],
 #inputContainer input[type="password"] {
     display: block;

@@ -1,0 +1,7 @@
+<?php
+?>
+
+<script>
+    currentPlaylist;
+
+</script>

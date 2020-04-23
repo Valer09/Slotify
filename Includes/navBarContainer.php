@@ -1,9 +1,11 @@
 <div id="navBarContainer">
     <nav class="navBar">
 
-        <a href="../View/index.php" class="logo">
+        <a href="index.php" class="logo">
             <img src="../Assets/images/icons/logo.png">
+
         </a>
+
 
         <div class="group">
 
@@ -28,6 +30,7 @@
                 <a href="profile.php" class="navItemLink">Reece Kenney</a>
             </div>
         </div>
+
 
     </nav>
 </div>
