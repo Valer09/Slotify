@@ -38,7 +38,6 @@ $jsonArray = json_encode($resultArray);
         $(".controlButton.pause").hide();
     }
 
-
 </script>
 
 <div id="nowPlayingBarContainer">
