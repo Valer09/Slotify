@@ -19,7 +19,7 @@ else {
 <head>
 	<title>Welcome to Slotify!</title>
 	<link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../Includes/Jquery.js"></script>
     <script src="../Assets/js/script.js"></script>
 </head>
 
