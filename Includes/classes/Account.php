@@ -60,8 +60,7 @@ class Account
         $encryptedPw = md5($pw);
         $profilePic = "../../Assets/images/profile-pics/boyPic.jpeg";
         $date = date("Y-m-d");
-
-        $result = mysqli_query($this->con, "INSERT INTO users VALUES ('','$un','$fn','$ln','$em','$encryptedPw','$date','$profilePic')");
+        $result = mysqli_query($this->con, "INSERT INTO users VALUES ('0','$un','$fn','$ln','$em','$encryptedPw','$date','$profilePic')");
         return $result;
 
     }
