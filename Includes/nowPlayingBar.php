@@ -126,7 +126,7 @@ $jsonArray = json_encode($resultArray);
 
 
     function nextSong() {
-
+        console.log(currentIndex);
         if (repeat) {
             audioElement.setTime(0);
             playSong();
@@ -163,8 +163,6 @@ $jsonArray = json_encode($resultArray);
     }
 
     function setTrack(trackId, newPlaylist, play) {
-                    console.log(currentPlaylist);
-                    console.log(shufflePlaylist);
 
         if (newPlaylist !== currentPlaylist){
             currentPlaylist = newPlaylist;
@@ -178,9 +176,6 @@ $jsonArray = json_encode($resultArray);
             currentIndex = currentPlaylist.indexOf(trackId);
 
         $.post("../Includes/handlers/ajax/getSongJson.php", {songId: trackId}, function(data){
-
-                    console.log(currentPlaylist);
-                    console.log(shufflePlaylist);
 
             currentIndex = currentPlaylist.indexOf(trackId);
 
@@ -200,9 +195,11 @@ $jsonArray = json_encode($resultArray);
             audioElement.setTrack(track);
 
             if (play)
-                audioElement.play();
+                //audioElement.play();
+                playSong();
             else
-                audioElement.pause();
+                //audioElement.pause();
+                pauseSong();
 
         });
 
