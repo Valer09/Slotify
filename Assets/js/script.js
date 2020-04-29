@@ -7,9 +7,13 @@ var currentIndex = 0;
 var isPlaying;
 var repeat = false;
 var isShuffle = false;
+var timer;
 
 
 function openPage(url){
+    if (timer != null)
+        clearTimeout(timer);
+
     if (url.indexOf("?") == -1)
         url=url+'?';
 
@@ -44,6 +48,10 @@ function updateTimeProgressBar(audio){
 function updateVolumeProgressBar(audio){
     var volume = audio.volume *100;
     $(".volumeBar .progress").css("width" , volume + "%");
+}
+
+function playFirstSong() {
+    setTrack(tempPlaylist[0], tempPlaylist, true);
 }
 
 
