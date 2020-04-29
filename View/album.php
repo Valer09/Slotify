@@ -1,4 +1,4 @@
-<?php include("../Includes/header.php"); ?>
+<?php include("../Includes/includedFiles.php"); ?>
 
 <?php
 
@@ -82,6 +82,3 @@ $artist = $album->getArtist();
     </ul>
 </div>
 
-
-
-<?php include("../Includes/footer.php"); ?>
