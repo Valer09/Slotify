@@ -1,5 +1,7 @@
 <?php
 
+$userLoggedIn=null;
+
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
     include("../Includes/config.php");
     include("../Includes/classes/User.php");
