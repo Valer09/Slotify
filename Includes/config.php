@@ -5,7 +5,7 @@ session_start();
 
 $timezone = date_default_timezone_set("Europe/Rome");
 
-$con = mysqli_connect("192.168.2.100:3307", "root", "Oliviero_91", "slotify","3307");
+$con = mysqli_connect("eu-cdbr-west-03.cleardb.net", "bf1d3cf829ee43", "8c812b6f", "heroku_94917b47a08ec11","3306");
 //$con->set_charset("latin1_swedish_ci");
 
 if (mysqli_connect_errno()) {
